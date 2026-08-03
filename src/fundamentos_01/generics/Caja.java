@@ -1,4 +1,4 @@
-package fundamentos_01;
+package fundamentos_01.generics;
 
 public class Caja<T> {
 

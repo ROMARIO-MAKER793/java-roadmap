@@ -1,4 +1,4 @@
-package fundamentos_01;
+package fundamentos_01.generics;
 
 import java.util.ArrayList;
 import java.util.List;
