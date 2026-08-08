@@ -27,6 +27,11 @@ public class Persona {
         return Objects.hash(nombre,edad);
     }
 
+     /*
+     Si dos objetos tienen el mismo hashCode(), no necesariamente son iguales (colisión),
+     pero ayuda a estructuras como HashMap o HashSet a buscarlos rápido.
+     */
+
     @Override
     public String toString() {
         return "Persona{" +
