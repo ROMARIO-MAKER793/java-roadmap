@@ -30,6 +30,17 @@ public class Producto {
         return Objects.hashCode(id);
     }
 
+    /*
+        Con hashCode() (Búsqueda por Hash):
+       1.- Java llama a p1.hashCode() y obtiene un número entero, por ejemplo 784521.
+       2.-  Va directamente a la "cubeta" 784521.
+       3.- Si la cubeta está vacía, sabe al instante que el objeto no existe (0 comparaciones pesadas).
+       4.- Si hay algo en esa cubeta, recién ahí ejecuta equals() solo con los objetos de esa cubeta específica.
+
+       En resumen: hashCode() sirve para filtrar rápido, y equals() sirve para confirmar la igualdad exacta.
+
+     */
+
     @Override
     public String toString() {
         return "Producto{" +
