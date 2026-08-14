@@ -1,6 +1,7 @@
 package POO_02;
 
-public interface FIchable {
+public interface Fichable {
+
     void marcarAsistencia(String entrada);
 
 }
