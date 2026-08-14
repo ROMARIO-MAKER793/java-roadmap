@@ -2,9 +2,12 @@ package POO_02;
 
 public class Empleado {
 
-    public void horario(){
-        System.out.println("los de oficina trabajan de lunes a viernes");
-    }
+    private String entrada;
+    private String salida;
 
+
+    public void setEntrada(String entrada) {
+        this.entrada = entrada;
+    }
 
 }
