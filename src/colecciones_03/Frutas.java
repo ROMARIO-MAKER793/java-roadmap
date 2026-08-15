@@ -19,12 +19,15 @@ public class Frutas {
         frutas.remove("Fresa");
         System.out.println(frutas);
 
-
+        //Recorrido con For each
         for (String fruta : frutas){
             System.out.println(fruta);
         }
 
         System.out.println(frutas.get(10));
+        //IndexOUTEXCEPTION
+
+
 
     }
 }
