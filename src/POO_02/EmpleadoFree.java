@@ -5,6 +5,7 @@ public class EmpleadoFree extends  Empleado{
     public static void main(String[] args) {
         EmpleadoFree free = new EmpleadoFree();
 
-        free.marcarAsistencia();
+        //Falla al escribir esta funcion
+        //free.marcarAsistencia();
     }
 }

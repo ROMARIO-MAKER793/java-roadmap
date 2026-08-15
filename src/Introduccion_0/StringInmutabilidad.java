@@ -1,6 +1,4 @@
-package fundamentos_01;
-
-import java.io.StringReader;
+package Introduccion_0;
 
 public class StringInmutabilidad {
 

@@ -1,7 +1,5 @@
 package fundamentos_01.Equals;
 
-import fundamentos_01.Primitivos;
-
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
