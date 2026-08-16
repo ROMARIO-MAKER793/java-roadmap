@@ -35,6 +35,8 @@ public class PersonaExample {
         productos.put("Arroz", 7);
         productos.put("Aceite", 2);
         productos.put("Atun", 11);
+        productos.put("Arroz", 15
+        );
 
         for(Map.Entry<String, Integer> salida : productos.entrySet()){
             System.out.println(salida.getKey() + ": " + salida.getValue());
