@@ -6,7 +6,11 @@ import java.util.List;
 public class PruebaExcepcion {
 
     public static void main(String[] args) {
-/*
+
+        public void archivo(){
+
+        }
+        /*
         List<String> lista = new ArrayList<>();
 
         lista.add("robert");
@@ -29,6 +33,19 @@ public class PruebaExcepcion {
 
 
         }*/
+
+        try {
+            archivo.leer();
+        } catch (IOException e) {
+            System.out.println("No se pudo leer el archivo: " + e.getMessage());
+            // o relanzar, o manejarlo de verdad, pero nunca dejarlo vacío
+        }
+
+        try {
+            archivo.leer();
+        } catch (Exception e) {
+            // vacío, o peor: e.printStackTrace() y seguir como si nada
+        }
 
 
     }
