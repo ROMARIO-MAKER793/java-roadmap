@@ -1,10 +1,10 @@
 package Excepciones;
 
-import java.util.List;
+
 
 public class ExampleExecpcion {
 
-    public void validarEdad(int edad) throws ArithmeticException{
+    public void validarEdad(int edad) throws IllegalArgumentException{
 
         if(edad<0){
             throw new IllegalArgumentException("La edad no puede ser negativa");
@@ -13,7 +13,7 @@ public class ExampleExecpcion {
     }
 
     public static void main(String[] args) {
-        /*
+
         try{
             int a = 20;
             int b = 0;
@@ -23,17 +23,20 @@ public class ExampleExecpcion {
         } catch (ArithmeticException e) {
 
             System.out.println("Error, no se puede dividir entre 0 : " + e.getClass().getSimpleName());
-        }*/
+        }
+        //Fin de la 1Era pregunta
 
-      /*  try{
+
+
+       try{
             int[] numeros = {1,2,3};
             System.out.println(numeros[5]);
 
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Indice fuera de rango " + e.getClass().getSimpleName());
-        }*/
+        }
 
-       /* try {
+        try {
             String nulo = null;
 
             nulo.length();
@@ -41,7 +44,7 @@ public class ExampleExecpcion {
         }catch (NullPointerException e){
             System.out.println("Nulo " + e.getClass().getSimpleName());
         }
-*/
+
         ExampleExecpcion example = new ExampleExecpcion();
 
         try {
