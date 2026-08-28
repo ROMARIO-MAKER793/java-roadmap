@@ -19,11 +19,4 @@ public class SaldoInsuficienteException extends RuntimeException{
         return  montoSolicitado;
     }
 
-    public static void main(String[] args) {
-
-        SaldoInsuficienteException saldo = new SaldoInsuficienteException(100,200);
-
-        System.out.println(saldo.getMontoSolicitado());
-
-    }
 }
