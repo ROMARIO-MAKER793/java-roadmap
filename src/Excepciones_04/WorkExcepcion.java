@@ -1,4 +1,4 @@
-package Excepciones;
+package Excepciones_04;
 
 public class WorkExcepcion extends  RuntimeException{
     private final int stockActual;

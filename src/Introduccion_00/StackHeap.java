@@ -1,4 +1,4 @@
-package Introduccion_0;
+package Introduccion_00;
 
 public class StackHeap {
 

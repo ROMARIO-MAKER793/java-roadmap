@@ -1,4 +1,4 @@
-package Excepciones;
+package Excepciones_04;
 
 public class RecursoPrueba implements AutoCloseable {
 

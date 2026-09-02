@@ -1,7 +1,4 @@
-package Excepciones;
-
-import java.util.ArrayList;
-import java.util.List;
+package Excepciones_04;
 
 public class PruebaExcepcion {
 
