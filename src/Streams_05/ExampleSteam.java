@@ -1,6 +1,7 @@
 package Streams_05;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ExampleSteam {
 
@@ -26,11 +27,24 @@ public class ExampleSteam {
         System.out.println(resultado);
 
 */
-        List<Integer> numeros = List.of(1,2,3,4,5);
+       /* List<Integer> numeros = List.of(1,2,3,4,5);
         int suma = numeros.stream()
                 .reduce(0,(acum , actual) -> acum + actual);
 
-        System.out.println(suma);
+        System.out.println(suma);*/
+
+    /*    List<Integer> numeros = List.of(1,2,3,4,5,6,7,8,9,10);
+
+        List<Integer> pares = numeros.stream()
+                .filter(n -> n % 2 == 0)
+                .collect(Collectors.toList());
+
+        System.out.println(pares);
+*/
+
+
     }
+
+
 
 }
