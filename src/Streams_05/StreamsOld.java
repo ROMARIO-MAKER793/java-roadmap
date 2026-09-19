@@ -32,6 +32,7 @@ public class StreamsOld {
         System.out.println(resultado);
 
 */
+
         List<Integer> numeros = List.of(1,2,3,4,5);
         int suma = numeros.stream()
                 .reduce(0,(acum , actual) -> acum + actual);
