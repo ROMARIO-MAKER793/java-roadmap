@@ -9,7 +9,9 @@ public class Numeros {
         List<Integer> numeros = List.of(3,7,2,9,4,1,8);
 
         int numeroMayor = numeros.stream()
-                        .reduce(0,(acum,actual) -> actual > acum ? actual : acum);
+                        //.reduce(0,(acum,actual) -> actual > acum ? actual : acum);
+                                .reduce(Integer::max)
+                                        .orElseThrow();
         System.out.println(numeroMayor);
     }
 }

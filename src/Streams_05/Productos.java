@@ -11,7 +11,7 @@ public class Productos {
         List<String> productos = List.of("laptop", "mouse" , "teclado", "monitor" , "audifonos",  "webcam");
 
         List<String> lista = productos.stream()
-                .filter(n -> n.length() > 5)
+                .filter(n -> n.length() > 6)
                 .map(String::toUpperCase)
                 .sorted()
                 .collect(Collectors.toList());
