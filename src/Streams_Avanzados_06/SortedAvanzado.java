@@ -52,7 +52,11 @@ public class SortedAvanzado {
         System.out.println(ordenadosPorPrecioDesc);
 
         List<SortedAvanzado> ordenMulitple = productos.stream()
-                .sorted(Comparator.comparing(SortedAvanzado::getCantidad))
+                .sorted(Comparator.comparing(SortedAvanzado::getNombre)
+                .thenComparing(SortedAvanzado::getCantidad))
+                .collect(Collectors.toList());
+
+        System.out.println(ordenMulitple);
 
     }
 }
