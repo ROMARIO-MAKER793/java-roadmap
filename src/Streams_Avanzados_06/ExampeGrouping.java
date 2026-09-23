@@ -1,7 +1,9 @@
 package Streams_Avanzados_06;
 
-import java.util.Comparator;
+
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class ExampeGrouping {
 
@@ -48,7 +50,18 @@ public class ExampeGrouping {
         );
 
 
-        List<ExampeGrouping> productosCategoria = listaProductos.stream()
-                .sorted(Comparator.comparing())
+        Map<String ,Long> conteoPorCategoria = listaProductos.stream()
+                .collect(Collectors.groupingBy(ExampeGrouping::getCategoria, Collectors.counting()));
+
+        conteoPorCategoria.entrySet().stream()
+                .forEach(System.out::println);
+
+        String nombres = listaProductos.stream()
+                .map(ExampeGrouping::getNombre)
+                .collect(Collectors.joining(","))
+                        .toUpperCase();
+        System.out.println("Lista de nombres con Joining");
+        System.out.println(nombres);
+
     }
 }
