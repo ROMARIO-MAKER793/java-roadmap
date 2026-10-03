@@ -3,11 +3,11 @@ package concurrencia;
 public class Contador {
     private int valor=0;
 
-    public void incrementar(){
+    public synchronized void incrementar(){
         valor++;
     }
 
-    public int getValor(){
+    public synchronized int getValor(){
         return valor;
     }
 
